@@ -1,0 +1,381 @@
+@charset "utf-8";
+@font-face {
+	font-family: Abril_Fatface;
+	src: url("./fonts/AbrilFatface-Regular.ttf");
+}
+/* {
+    border: thin solid #FF0004;
+
+} */
+body {
+	margin: 0px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.container {
+	height: 100%;
+}
+.navbar {
+	height: 50px;
+	width: 100%;
+	background-color: white;
+	align-items: center;
+}
+.logo {
+    flex-grow: 1;
+	text-align: center;
+    font-size: xx-large;
+	font-family: Abril_Fatface;
+}
+.header-nav {
+	flex-grow: 4;
+}
+.header-list {
+	margin-left: auto;
+	margin-right: 5%;
+}
+.header-item {
+	width: 100px;
+	display: inline-block;
+}
+.shopping-cart {
+	display: inline-block;
+	position: relative;
+}
+.shopping-cart ul {
+	list-style: none;
+}
+.shopping-cart li{
+	display: inline-block;
+}
+.shopping-cart li p {
+    position: absolute;
+	top: 10px;
+}
+.main-content {
+	width: 100%;
+	height: 100%;
+}
+.sidebar {
+	flex-grow: 1;
+}
+.sidebar-nav {
+    list-style: none;
+    margin: 0;
+    font-size: large;
+	padding: 0;
+	text-align: center;
+}
+.sidebar-nav-item {
+	margin: 5px 0;
+	padding: 3px;
+}
+.sidebar-nav-item:hover{
+	background-color: aqua;
+	padding-left: 20px;
+}
+.display {
+	flex-grow: 5;
+}.jumbotron {
+	position: relative;
+    background-image: url(./images/cofee_shop_image.png);
+    height: 75vh;
+    background-size: cover;
+}
+.tagline {
+	 color: white;
+    position: absolute;
+    top: 40%;
+    left: 12%;
+}
+.tagline h2{
+
+    font-size: 233%;
+	text-decoration: underline;
+	margin: 0;
+}
+.tagline p{
+
+    font-size: 150%;
+	width: 80%;
+	margin: 0;
+}
+.tagline a {
+	width: 200px;
+}
+.display {
+	height: calc(100vh - 100px);
+}
+.home-page-body {
+	background-color: #1B1B1B;
+}
+hr {
+	width: 80%;
+	height: 5px;
+	background-color: white;
+}
+
+/*our partners section*/
+.our-partners {
+	width: 100%;
+}
+.our-partners h2 {
+	text-align: center;
+	font-family: Abril_Fatface;
+	color: white;
+}
+.partners {
+	text-align: center;
+}
+.partner {
+	width: 24vw;
+	display: inline-block;
+	color: white;
+}
+.partner img{
+
+}
+/* Our mission statement */
+.home-page-about h2 {
+	font-family: Abril_Fatface;
+	color: white;
+}
+.home-about-image img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: medium solid #000000;
+}
+.home-about-text {
+    font-size: x-large;
+    text-align: left;
+	color: white;
+
+}
+/*Coffee scrollbar*/
+.coffe-scrollbar {
+	padding: 20px 0;
+}
+.coffee-scrollbar h2 {
+	font-family: Abril_Fatface;
+	text-align: center;
+	color: white;
+}
+.coffee {
+	width: 200px;
+	height: 300px;
+	margin: 0 15px;
+	scroll-snap-align: center;
+	text-align: center;
+}
+.coffee-display {
+	width: 5300px;
+	margin-bottom: 20px;
+}
+.right-end {
+	margin-right: 600px;
+}
+.left-end {
+	margin-left: 700px;
+}
+.fade-container {
+	position: relative;
+	width: 80%;
+    margin: 0 auto;
+}
+.scrollbar {
+    overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	-webkit-overflow-scrolling: touch;
+
+}
+.scrollbar-overlay-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 20%;
+    width: 10%;
+    background-image: -webkit-linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(27,27,27,1.00) 100%);
+    background-image: -moz-linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(27,27,27,1.00) 100%);
+    background-image: -o-linear-gradient(180deg,rgba(255,255,255,0.00) 0%,rgba(27,27,27,1.00) 100%);
+    background-image: linear-gradient(270deg,rgba(255,255,255,0.00) 0%,rgba(27,27,27,1.00) 100%);
+}
+.scrollbar-overlay-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 20%;
+    width: 10%;
+    background-image: -webkit-linear-gradient(0deg,rgba(255,255,255,0.00) 0%,rgba(27,27,27,1.00) 100%);
+    background-image: -moz-linear-gradient(0deg,rgba(255,255,255,0.00) 0%,rgba(27,27,27,1.00) 100%);
+    background-image: -o-linear-gradient(0deg,rgba(255,255,255,0.00) 0%,rgba(27,27,27,1.00) 100%);
+    background-image: linear-gradient(90deg,rgba(255,255,255,0.00) 0%,rgba(27,27,27,1.00) 100%);
+}
+.scrollbar::-webkit-scrollbar {
+	height: 150px;
+
+}
+.scrollbar::-webkit-scrollbar-track {
+ background-image: -webkit-linear-gradient(0deg,rgba(179,179,179,1.00) 0%,rgba(0,0,0,1.00) 100%);
+    background-image: -moz-linear-gradient(0deg,rgba(179,179,179,1.00) 0%,rgba(0,0,0,1.00) 100%);
+    background-image: -o-linear-gradient(0deg,rgba(179,179,179,1.00) 0%,rgba(0,0,0,1.00) 100%);
+    background-image: linear-gradient(90deg,rgba(179,179,179,1.00) 0%,rgba(0,0,0,1.00) 100%);
+	border-top: 65px solid #1B1B1B;
+	border-bottom: 65px solid #1B1B1B;
+	border-radius: 25px;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+	background: url("images/coffee_logo.png") no-repeat;
+    background-size: 200px 150px;
+	overflow: visible;
+    display: block;
+	background-position: 50% 0;
+}
+
+/*
+Styling for the header button
+*/
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    margin-top: 40px;
+}
+
+.button .bottom {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 270px;
+    height: 100%;
+    background-color: white;
+    display: block;
+    -webkit-transition: all .15s ease-out;
+    -moz-transition: all .15s ease-out;
+    -o-transition: all .15s ease-out;
+    transition: all .15s ease-out;
+}
+
+.button .top {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 24px 34px 22px 34px;
+    border: 2px solid black;
+}
+
+.button-dark .top {
+    border: 2px solid #fff;
+}
+
+.button .top .label {
+    font-family: sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: 12px;
+    line-height: 110%;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: all .15s ease-out;
+    -moz-transition: all .15s ease-out;
+    -o-transition: all .15s ease-out;
+    transition: all .15s ease-out;
+}
+
+.button-dark .top .label {
+    color: #fff;
+}
+
+.button:hover .bottom {
+    left: 0;
+    top: 0;
+    background-color: #f3f3f3;
+}
+
+.button:hover .top .label {
+    color: #364F53;
+}
+
+.button-border {
+    position: absolute;
+    background-color: #364F53;
+    -webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+}
+
+.button:hover .top .button-border-left,.button:hover .top .button-border-right {
+    height: calc(100% + 2px);
+}
+
+.button:hover .top .button-border-top,.button:hover .top .button-border-bottom {
+    width: calc(100% + 2px);
+}
+
+.button-border-left {
+    left: -2px;
+    bottom: -2px;
+    width: 2px;
+    height: 0;
+}
+
+.button-border-top {
+    left: -2px;
+    top: -2px;
+    width: 0;
+    height: 2px;
+}
+
+.button-border-right {
+    right: -2px;
+    top: -2px;
+    width: 2px;
+    height: 0;
+}
+
+.button-border-bottom {
+    right: -2px;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+}
+/*shopping items style*/
+.item {
+	height: 30%;
+    min-width: 16%;
+    max-width: 16%;
+    padding: 10px 20px;
+}
+.item-title {
+    width: 100%;
+    text-align: center;
+    
+}
+
+/*Login CSS*/
+.login-container {
+     position: fixed;
+  top: 50%;
+  left: 50%;
+    width: 60vw;
+    height: 60vh;
+    background-color: grey;
+    transform: translate(-50%, -50%);
+}
